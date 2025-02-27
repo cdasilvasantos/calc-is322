@@ -2,75 +2,101 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var display = "0"
+    @State private var equationDisplay = "" // Stores the full equation
     @State private var firstNumber: Double?
     @State private var secondNumber: Double?
     @State private var currentOperation: String?
     @State private var isTypingNumber = false
 
-    let buttons = [
-        ["7", "8", "9", "÷"],
-        ["4", "5", "6", "×"],
-        ["1", "2", "3", "-"],
-        ["AC", "0", "=", "+"]
+    let buttons: [[CalculatorButton]] = [
+        [.clear, .plusMinus, .percent, .divide],
+        [.number("7"), .number("8"), .number("9"), .multiply],
+        [.number("4"), .number("5"), .number("6"), .subtract],
+        [.number("1"), .number("2"), .number("3"), .add],
+        [.delete, .number("0"), .decimal, .equals]
     ]
 
     var body: some View {
-        VStack {
+        VStack(spacing: 12) {
             Spacer()
-            Text(display)
-                .font(.largeTitle)
+
+            // Show the equation in small text above the display
+            Text(equationDisplay)
+                .font(.system(size: 30))
+                .foregroundColor(.gray)
                 .frame(maxWidth: .infinity, alignment: .trailing)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(10)
+                .padding(.horizontal)
+
+            // Show the main display where the user types
+            Text(display)
+                .font(.system(size: 80))
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity, alignment: .trailing)
                 .padding()
 
             ForEach(buttons, id: \.self) { row in
-                HStack {
+                HStack(spacing: 12) {
                     ForEach(row, id: \.self) { button in
-                        Button(action: {
-                            buttonTapped(button)
-                        }) {
-                            Text(button)
-                                .font(.title)
-                                .frame(width: 80, height: 80)
-                                .background(Color.blue.opacity(0.7))
-                                .foregroundColor(.white)
-                                .clipShape(Circle())
-                        }
+                        CalculatorButtonView(button: button, action: {
+                            self.buttonTapped(button)
+                        })
                     }
                 }
             }
         }
         .padding()
+        .background(Color.black.ignoresSafeArea())
     }
 
-    func buttonTapped(_ button: String) {
-        if let _ = Double(button) {  // Number button tapped
+    func buttonTapped(_ button: CalculatorButton) {
+        switch button {
+        case .number(let value):
             if isTypingNumber {
-                display += button
+                display += value
             } else {
-                display = button
+                display = value
                 isTypingNumber = true
             }
-        } else if button == "AC" {  // All Clear button
+        case .clear:
             display = "0"
+            equationDisplay = "" // Reset equation
             firstNumber = nil
             secondNumber = nil
             currentOperation = nil
             isTypingNumber = false
-        } else if button == "=" {  // Equals button
+        case .delete:
+            if display.count > 1 {
+                display.removeLast()
+            } else {
+                display = "0"
+            }
+        case .add, .subtract, .multiply, .divide:
+            if let num = Double(display) {
+                firstNumber = num
+                currentOperation = button.symbol
+                isTypingNumber = false
+                equationDisplay = "\(formatResult(num)) \(button.title)" // Update equation display
+            }
+        case .equals:
             if let first = firstNumber, let operation = currentOperation, let second = Double(display) {
-                display = formatResult(calculate(first: first, second: second, operation: operation))
+                let result = calculate(first: first, second: second, operation: operation)
+                equationDisplay = "\(equationDisplay) \(formatResult(second)) ="
+                display = formatResult(result)
                 firstNumber = nil
                 currentOperation = nil
                 isTypingNumber = false
             }
-        } else {  // Operator button tapped (+, -, ×, ÷)
+        case .decimal:
+            if !display.contains(".") {
+                display += "."
+            }
+        case .plusMinus:
             if let num = Double(display) {
-                firstNumber = num
-                currentOperation = button
-                isTypingNumber = false
+                display = formatResult(-num)
+            }
+        case .percent:
+            if let num = Double(display) {
+                display = formatResult(num / 100)
             }
         }
     }
@@ -87,12 +113,13 @@ struct ContentView: View {
 
     func formatResult(_ result: Double) -> String {
         if result.truncatingRemainder(dividingBy: 1) == 0 {
-            return String(Int(result))  // Show as integer if there's no decimal part
+            return String(Int(result))
         }
-        return String(result)  // Show as decimal otherwise
+        return String(result)
     }
 }
 
 #Preview {
     ContentView()
+        .preferredColorScheme(.dark) // Ensures it looks good in dark mode
 }
