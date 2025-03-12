@@ -1,4 +1,4 @@
-# 🧮 SwiftCalc - SwiftUI Calculator App
+# 📲 SwiftCalc - SwiftUI Calculator App
 ![Swift](https://img.shields.io/badge/Swift-5.5-orange) ![Platform](https://img.shields.io/badge/Platform-iOS-blue) [![Swift Xcode Tests](https://github.com/cdasilvasantos/calc-is322/actions/workflows/main.yml/badge.svg)](https://github.com/cdasilvasantos/calc-is322/actions/workflows/main.yml)
 
 ## 📌 Overview
@@ -85,7 +85,7 @@ I presented this project as part of my coursework for IS 322 (Mobile Application
 
 ## 🎨 Figma Design
 The UI design for this calculator was prototyped in Figma:  
-📌 [View the Figma design]()
+📌 [View the Figma design](https://www.figma.com/design/IVVOKyn94TETe67m9VWhaW/Iphone-Calculator-(Community)?node-id=0-1&t=hRt2vtLw9T0NKay4-1)
 
 ---
 
