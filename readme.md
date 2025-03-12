@@ -1,7 +1,3 @@
-Here's a redesigned version of your README with a fresh layout while keeping all the original components:  
-
----
-
 # **SwiftCalc - A SwiftUI-Powered Calculator** 📲  
 
 ![Swift](https://img.shields.io/badge/Swift-5.5-orange) ![Platform](https://img.shields.io/badge/Platform-iOS-blue) [![Swift Xcode Tests](https://github.com/cdasilvsantos/calc-is322/actions/workflows/main.yml/badge.svg)](https://github.com/cdasilvsantos/calc-is322/actions/workflows/main.yml)  
