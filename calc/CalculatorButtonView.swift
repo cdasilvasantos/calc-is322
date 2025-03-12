@@ -13,9 +13,12 @@ struct CalculatorButtonView: View {
                 .background(button.backgroundColor)
                 .clipShape(Circle())
         }
+        // Using both identifier and label for maximum compatibility
+        .accessibilityIdentifier(button.title)
+        .accessibilityLabel(button.title)
     }
-    
+
     private func buttonWidth() -> CGFloat {
-        return 80 // Ensure all buttons are the same size
+        return 80
     }
 }

@@ -26,6 +26,7 @@ struct ContentView: View {
                 .foregroundColor(.gray)
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .padding(.horizontal)
+                .accessibilityIdentifier("equationDisplay")
 
             // Show the main display where the user types
             Text(display)
@@ -33,6 +34,10 @@ struct ContentView: View {
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity, alignment: .trailing)
                 .padding()
+                .accessibilityIdentifier("resultDisplay")
+                // Add both of these for maximum test compatibility
+                .accessibilityLabel(display)
+                .accessibilityValue(display)
 
             ForEach(buttons, id: \.self) { row in
                 HStack(spacing: 12) {
@@ -112,13 +117,13 @@ struct ContentView: View {
     }
 
     func formatResult(_ result: Double) -> String {
+        // Display as integer if it's a whole number
         if result.truncatingRemainder(dividingBy: 1) == 0 {
             return String(Int(result))
         }
         return String(result)
     }
 }
-
 #Preview {
     ContentView()
         .preferredColorScheme(.dark) // Ensures it looks good in dark mode
