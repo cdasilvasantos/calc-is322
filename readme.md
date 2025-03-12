@@ -1,5 +1,5 @@
 # 🧮 SwiftCalc - SwiftUI Calculator App
-![Swift](https://img.shields.io/badge/Swift-5.5-orange) ![Platform](https://img.shields.io/badge/Platform-iOS-blue) [![Swift Tests](https://github.com/cdasilvsantos/calc-is322/actions/workflows/swift-tests.yml/badge.svg)](https://github.com/cdasilvsantos/calc-is322/actions/workflows/swift-tests.yml)
+![Swift](https://img.shields.io/badge/Swift-5.5-orange) ![Platform](https://img.shields.io/badge/Platform-iOS-blue) [![Swift Xcode Tests](https://github.com/cdasilvasantos/calc-is322/actions/workflows/main.yml/badge.svg)](https://github.com/cdasilvasantos/calc-is322/actions/workflows/main.yml)
 
 ## 📌 Overview
 **SwiftCalc** is a modern **SwiftUI-based calculator** that provides:
