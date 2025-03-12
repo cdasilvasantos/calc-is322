@@ -1,114 +1,120 @@
-# 📲 SwiftCalc - SwiftUI Calculator App
-![Swift](https://img.shields.io/badge/Swift-5.5-orange) ![Platform](https://img.shields.io/badge/Platform-iOS-blue) [![Swift Xcode Tests](https://github.com/cdasilvasantos/calc-is322/actions/workflows/main.yml/badge.svg)](https://github.com/cdasilvasantos/calc-is322/actions/workflows/main.yml)
-
-## 📌 Overview
-**SwiftCalc** is a modern **SwiftUI-based calculator** that provides:
-- ✅ **Beautiful SwiftUI Interface**
-- ✅ **Comprehensive Unit and UI Testing**
-- ✅ **Clean, Maintainable Code Structure**
+Here's a redesigned version of your README with a fresh layout while keeping all the original components:  
 
 ---
 
-## 🚀 Features
-- 📱 **Intuitive Calculator Interface**
-- ✅ **Basic Operations:** addition, subtraction, multiplication, division
-- ✅ **Additional Functions:** percentage, negative/positive toggle, decimal point
-- 🧹 **Clear and Delete Functions**
-- 📝 **Equation History Display**
-- 🛠 **Complete Test Suite** with `XCTest`
-- 🔄 **Accessibility Support** for UI Testing
+# **SwiftCalc - A SwiftUI-Powered Calculator** 📲  
+
+![Swift](https://img.shields.io/badge/Swift-5.5-orange) ![Platform](https://img.shields.io/badge/Platform-iOS-blue) [![Swift Xcode Tests](https://github.com/cdasilvsantos/calc-is322/actions/workflows/main.yml/badge.svg)](https://github.com/cdasilvsantos/calc-is322/actions/workflows/main.yml)  
+
+## 🔹 **About SwiftCalc**  
+**SwiftCalc** is a sleek and efficient **SwiftUI-based calculator** designed for **iOS**. This project focuses on clean architecture, intuitive user experience, and comprehensive testing.  
+
+### **Key Highlights**  
+✔ **Elegant SwiftUI Interface**  
+✔ **Essential and Advanced Calculator Functions**  
+✔ **Comprehensive Unit & UI Testing with XCTest**  
+✔ **Optimized for Accessibility & Usability**  
 
 ---
 
-## 📦 Setup & Installation
-### **1️⃣ Clone the Repository**
+## 🎯 **Features at a Glance**  
+📌 **User-Friendly Interface** – Simple, minimal, and effective  
+➕➖✖➗ **Basic Operations** – Addition, subtraction, multiplication, and division  
+🔢 **Extended Functions** – Percentage, decimal point, sign toggle  
+🧼 **Memory Management** – Clear and delete functions  
+📜 **Equation History** – Displays past calculations for better tracking  
+🛡 **Reliable Testing Suite** – Built-in unit and UI tests for stability  
+♿ **Accessibility Support** – Enhanced UI testing compatibility  
+
+---
+
+## 🛠 **Getting Started**  
+
+### **1️⃣ Clone the Repository**  
 ```sh
 git clone https://github.com/cdasilvsantos/calc-is322.git
 cd calc-is322
 ```
 
-### **2️⃣ Open in Xcode**
-```sh 
+### **2️⃣ Open in Xcode**  
+```sh
 open calc-is322.xcodeproj
 ```
 
-### **3️⃣ Build and Run**
-- Press `Cmd + R` in Xcode to build and run the app
-- Select your desired simulator or connected device
+### **3️⃣ Build & Run the App**  
+- Open the project in Xcode  
+- Press **Cmd + R** to build and launch the app  
+- Select an **iOS Simulator** or a **physical device**  
 
-### **4️⃣ Run Tests**
-- Press `Cmd + U` in Xcode to run all tests
-- View test results in the Test Navigator
-
----
-
-## 📱 App Structure
-The calculator is built with a clean architecture:
-
-### Key Components
-- **ContentView.swift**: Main UI and interaction logic
-- **CalculatorButton.swift**: Enum defining calculator buttons and their properties
-- **CalculatorButtonView.swift**: Custom button UI component
-
-### UI Design
-- Modern dark theme with vibrant accent colors
-- Large, readable display with equation history
-- Circular buttons with visual feedback
+### **4️⃣ Running Tests**  
+- Press **Cmd + U** in Xcode to execute all unit and UI tests  
+- Check results in the **Test Navigator**  
 
 ---
 
-## ✅ Testing
-This project includes comprehensive testing:
+## 🏗 **App Architecture**  
 
-### Unit Tests
-- Tests all calculator operations
-- Ensures correct calculation logic
-- Validates number formatting
+SwiftCalc follows a clean and maintainable structure:  
 
-### UI Tests
-- Verifies button interactions
-- Tests calculation flows
-- Ensures proper result display
+🔹 **`ContentView.swift`** – Core UI & interaction logic  
+🔹 **`CalculatorButton.swift`** – Defines calculator buttons and properties  
+🔹 **`CalculatorButtonView.swift`** – Custom UI components for button interactions  
 
----
-
-## 🎥 App Demo
-![Calculator Demo]()
+### **User Interface Design**  
+🎨 **Modern Dark Theme** – Sleek aesthetics with vibrant highlights  
+📱 **Responsive Layout** – Optimized for different screen sizes  
+🔘 **Tactile Feedback** – Circular buttons with smooth animations  
 
 ---
 
-## 🎤 Presentation
-I presented this project as part of my coursework for IS 322 (Mobile Applications and Design). You can view my presentation slides here:  
-📎 [SwiftCalc Presentation]()
+## ✅ **Testing Approach**  
+
+**Unit Tests**  
+✔ Validate all calculation operations  
+✔ Ensure number formatting accuracy  
+
+**UI Tests**  
+✔ Simulate user interactions  
+✔ Verify correct display of results  
+✔ Test different calculation flows  
 
 ---
 
-## 🎨 Figma Design
-The UI design for this calculator was prototyped in Figma:  
-📌 [View the Figma design](https://www.figma.com/design/IVVOKyn94TETe67m9VWhaW/Iphone-Calculator-(Community)?node-id=0-1&t=hRt2vtLw9T0NKay4-1)
+## 🎥 **App Preview**  
+![Calculator Demo]()  
 
 ---
 
-## 🛠️ Development
-### Design Principles
-- **Clean Code**: Well-organized, maintainable structure
-- **Separation of Concerns**: UI components separated from logic
-- **Testability**: Designed for comprehensive testing
-
-### Technologies Used
-- **SwiftUI**: Modern declarative UI framework
-- **XCTest**: Testing framework
-- **Accessibility**: Support for UI testing and assistive technologies
+## 📖 **Project Presentation**  
+This project was showcased for **IS 322 – Mobile Applications and Design**. You can check out the slides here:  
+📌 [View the Presentation]()  
 
 ---
 
-## 👨‍💻 Contributing
-Want to improve the **SwiftCalc**? Feel free to:  
-- 🛠 Open an **issue** for bugs/features  
-- 📝 Submit a **pull request** with improvements
+## 🎨 **Figma Prototype**  
+The calculator’s UI was initially designed in **Figma**. You can explore the design here:  
+🔗 [View Figma Prototype](https://www.figma.com/design/IVVOKyn94TETe67m9VWhaW/Iphone-Calculator-(Community)?node-id=0-1&t=hRt2vtLw9T0NKay4-1)  
 
 ---
 
-## ✨ Author
-Created by **Chiara da Silva Santos** 🚀  
-🔗 [GitHub](https://github.com/cdasilvsantos)
+## 🛠 **Tech Stack & Design Principles**  
+
+### **Technologies Used**  
+🚀 **SwiftUI** – Declarative UI framework  
+🧪 **XCTest** – Comprehensive testing support  
+🔍 **Accessibility Tools** – Enhanced support for assistive technologies  
+
+### **Design Principles**  
+✔ **Clean Code Structure** – Organized for scalability  
+✔ **Separation of Concerns** – UI components and logic are modularized  
+✔ **Maintainability & Testability** – Designed with easy debugging in mind  
+
+---
+
+## ✨ **Author**  
+Developed by **Chiara da Silva Santos** 🚀  
+🔗 [GitHub](https://github.com/cdasilvsantos)  
+
+---
+
+This version maintains all the original information while giving it a fresh, organized look with varied formatting. Let me know if you’d like any refinements! 🚀
