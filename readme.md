@@ -1,6 +1,6 @@
 # **SwiftCalc - A SwiftUI-Powered Calculator** 📲  
 
-![Swift](https://img.shields.io/badge/Swift-5.5-orange) ![Platform](https://img.shields.io/badge/Platform-iOS-blue) [![Swift Xcode Tests](https://github.com/cdasilvsantos/calc-is322/actions/workflows/main.yml/badge.svg)](https://github.com/cdasilvsantos/calc-is322/actions/workflows/main.yml)  
+![Swift](https://img.shields.io/badge/Swift-5.5-orange) ![Platform](https://img.shields.io/badge/Platform-iOS-blue) [![Swift Xcode Tests](https://github.com/cdasilvasantos/calc-is322/actions/workflows/main.yml/badge.svg)](https://github.com/cdasilvasantos/calc-is322/actions/workflows/main.yml)
 
 ## 🔹 **About SwiftCalc**  
 **SwiftCalc** is a sleek and efficient **SwiftUI-based calculator** designed for **iOS**. This project focuses on clean architecture, intuitive user experience, and comprehensive testing.  
@@ -28,7 +28,7 @@
 
 ### **1️⃣ Clone the Repository**  
 ```sh
-git clone https://github.com/cdasilvsantos/calc-is322.git
+git clone https://github.com/cdasilvasantos/calc-is322.git
 cd calc-is322
 ```
 
@@ -77,7 +77,7 @@ SwiftCalc follows a clean and maintainable structure:
 ---
 
 ## 🎥 **App Preview**  
-![Calculator Demo]()  
+![Calculator Demo](media/demo.mov)  
 
 ---
 
@@ -109,7 +109,7 @@ The calculator’s UI was initially designed in **Figma**. You can explore the d
 
 ## ✨ **Author**  
 Developed by **Chiara da Silva Santos** 🚀  
-🔗 [GitHub](https://github.com/cdasilvsantos)  
+🔗 [GitHub](https://github.com/cdasilvasantos)  
 
 ---
 
