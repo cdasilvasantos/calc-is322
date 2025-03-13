@@ -77,7 +77,7 @@ SwiftCalc follows a clean and maintainable structure:
 ---
 
 ## 🎥 **App Preview**  
-![Calculator Demo](media/demo.mov)  
+![Calculator Demo](media/demo.gif)  
 
 ---
 
