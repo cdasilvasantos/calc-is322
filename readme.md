@@ -83,7 +83,7 @@ SwiftCalc follows a clean and maintainable structure:
 
 ## 📖 **Project Presentation**  
 This project was showcased for **IS 322 – Mobile Applications and Design**. You can check out the slides here:  
-📌 [View the Presentation]()  
+📌 [View the Presentation](https://docs.google.com/presentation/d/1HatUgaseFliKZSVUwOK7ubOC9M3Ck_9KMhcx_teFtCo/edit?usp=sharing)  
 
 ---
 
@@ -107,10 +107,6 @@ The calculator’s UI was initially designed in **Figma**. You can explore the d
 
 ---
 
-## ✨ **Author**  
+## ✨ **Creator**  
 Developed by **Chiara da Silva Santos** 🚀  
 🔗 [GitHub](https://github.com/cdasilvasantos)  
-
----
-
-This version maintains all the original information while giving it a fresh, organized look with varied formatting. Let me know if you’d like any refinements! 🚀
