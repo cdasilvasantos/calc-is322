@@ -74,6 +74,8 @@ SwiftCalc follows a clean and maintainable structure:
 ✔ Verify correct display of results  
 ✔ Test different calculation flows  
 
+**All Tests Pass**
+[Tests](media/tests.png)
 ---
 
 ## 🎥 **App Preview**  
